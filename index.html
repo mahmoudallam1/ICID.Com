@@ -1,9 +1,131 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>I can I do</title>
-    </head>
-    <body>
-        <h1>Welcome to I can I do</h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Can I Do | Empowering Developers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+      color: #fff;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 29px;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">I Can I Do</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Empowering Developers & Building Solutions</h1>
+      <p class="lead mt-3">We help developers master modern technologies and bring software ideas to life.</p>
+      <a href="#services" class="btn btn-primary btn-lg mt-4">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5" id="about">
+    <div class="container text-center">
+      <h2 class="section-title">About Us</h2>
+      <p class="text-muted mx-auto" style="max-width: 700px;">
+        I Can I Do is a software and education company passionate about empowering developers. 
+        We build applications and provide learning paths to help professionals master technologies 
+        like C#, .NET, SQL Server, Angular, and Azure.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5 bg-light" id="services">
+    <div class="container text-center">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Software Development</h5>
+              <p class="card-text">Custom web and cloud solutions using .NET, C#, and Azure to help businesses grow efficiently.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Developer Training</h5>
+              <p class="card-text">Hands-on training and mentorship to help developers earn certifications and advance their careers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Consulting</h5>
+              <p class="card-text">We guide teams through architecture design, code review, and cloud adoption best practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container text-center">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="text-muted">Have a project or want to collaborate? Let’s connect!</p>
+      <form class="mx-auto" style="max-width: 500px;">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+        <button class="btn btn-primary px-4" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 I Can I Do. All rights reserved.</p>
+      <small>Made with ❤️ using Bootstrap 5</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
